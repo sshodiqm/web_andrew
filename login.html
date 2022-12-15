@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Tugas Web Kelompok</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/login.css">
+        <style media="screen">
+            @font-face{
+                font-family: gothic;
+                src: url(font/GOTHIC.TTF);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="background">
+            <img src="img/login-bg.png" class="login-bg" alt="">
+            <div class="login-box">
+                <div class="img-box">
+                    <img src="img/D.png" class="logo" alt=""><br>
+                </div>
+                <h3 class="title">Community Website</h3>
+                <form class="" action="" method="">
+                    <input type="text" name="" value="" id="email" placeholder="Username or Email"><br>
+                    <input type="password" name="" value="" id="password" placeholder="Password">
+                    <div class="btn-box">
+                        <button type="button" name="button" onclick="auth()">Log In</button>
+                    </div>
+                </form>
+                <hr>
+                <div class="link1">
+                    <a href="#" class="register">Register</a>
+                    <a href="#" class="forgot-password">Forgot Your Password?</a>
+                </div>
+                <a href="#" class="need-help">Need Any Help?</a>
+            </div>
+        </div>
+        <script>
+            function auth(){
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+                if (email == "admin" && password == "admin123"){
+                    window.location.assign("index.html");
+                    alert("Login Successfully ");
+                }
+                else{
+                    alert("Invalid Information ");
+                    return;
+                }
+            }
+        </script>
+    </body>
+</html>
