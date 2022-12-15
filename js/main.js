@@ -30,3 +30,11 @@ menuBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   navigation.classList.remove("active");
 });
+
+//Social media redirect
+function redirYouTube() {
+  window.location.href = "https://youtube.com/channel/UCeNdjpgj1FITiq_T8PYDJ-A"
+}
+function redirInstagram() {
+  window.location.href = "https://instagram.com/nongkrong_it"
+}
